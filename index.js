@@ -59,26 +59,9 @@ const record = [
     { year: "1961", result: "N/A"},
     { year: "1960", result: "N/A"}
   ]
-  /*
-  let clonedArray = JSON.parse(JSON.stringify(nodesArray))
-  */
 
-  const arrSample = [3, 4, 7, 8, 9, 43]
-
-function superBowlWin(array) {
-    const deepCopiedArray = [...array] // **USUALLY** creates full copy of passed in array 
-                                       // that can be modified without affecting original array
-
-    const shallowCopiedArray = array // Because arrays (and other objects in general) are REFERENCE TYPES, not PRIMITIVE (like numbers, strings,)
-                                     // this just creates a 'reference' to the location of the passed in array in memory
-                                     
-
-    shallowCopiedArray[0] = 7
+function superBowlWin(foobar) {
     
-
-    console.log(array)
-    console.log(shallowCopiedArray) 
-    //console.log(shallowCopiedArray)
 }
 
-superBowlWin(arrSample)
+superBowlWin(record);
